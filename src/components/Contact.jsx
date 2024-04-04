@@ -12,6 +12,10 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -30,8 +34,8 @@ const Contact = () => {
     event.preventDefault();
     setLoading(true);
     emailjs.send(
-      'service_fqbuv15',
-      'template_ud2k9zh',
+      SERVICE_ID,
+      TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Ilia',
@@ -39,7 +43,7 @@ const Contact = () => {
         to_email: 'paterfamelias@gmail.com',
         message: form.message,
       },
-      'jWvezOGdvbtSot2eq',
+      API_KEY,
     ).then(() => {
       setLoading(false);
       alert(`Спасибо ${form.name}. Ваше сообщение успешно отправлено! Я свяжусь с Вами в ближайшее время`);
