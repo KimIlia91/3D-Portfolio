@@ -21,16 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import makers from './company/makers.png';
+import timely from './company/timely.png';
+import boosterLogo from './company/booster.png';
 
 import food from './food.png';
 import marvel from './marvel.png';
 import booster from './booster.png';
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import pulse from './pulse.png';
 import myLogo from './myLogo.png';
 
 export {
@@ -55,14 +53,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  jobit,
-  tripguide,
   myLogo,
   booster,
   marvel,
   food,
+  boosterLogo,
+  timely,
+  makers,
+  pulse,
 };
