@@ -121,10 +121,10 @@ const experiences = [
       iconBg: "#383E56",
       date: "Март 2023 - Апрель 2023",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
       ],
     },
     {
@@ -134,10 +134,10 @@ const experiences = [
       iconBg: "#E6DEDD",
       date: "Май 2023 - Октябрь 2023",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
       ],
     },
     {
@@ -147,10 +147,10 @@ const experiences = [
       iconBg: "#383E56",
       date: "Январь 2022 - настоящее время",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
       ],
     },
 ];
@@ -158,26 +158,26 @@ const experiences = [
 const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      name: "Lorem ipsum",
+      designation: "Lorem",
+      company: "Lorem ipsum",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      name: "Lorem ipsum",
+      designation: "Lorem",
+      company: "Lorem ipsum",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      name: "Lorem ipsum",
+      designation: "Lorem",
+      company: "Lorem ipsum",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
@@ -186,7 +186,7 @@ const projects = [
     {
       name: "Booster IT School",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
       tags: [
         {
           name: "react",
@@ -208,7 +208,7 @@ const projects = [
     {
       name: "Marvel Fan Site",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
       tags: [
         {
           name: "react",
@@ -230,7 +230,7 @@ const projects = [
     {
       name: "Food Delivery",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
       tags: [
         {
           name: "js",
