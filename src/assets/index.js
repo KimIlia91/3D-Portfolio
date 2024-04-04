@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import dotnet from './tech/dotnet.png';
+import csharp from './tech/c-sharp.svg';
+import postgre from './tech/postgres.svg';
+import microsoftsql from './tech/microsoft-sql.svg';
 
 import makers from './company/makers.png';
 import timely from './company/timely.png';
@@ -42,17 +46,13 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
   redux,
   tailwind,
   typescript,
-  threejs,
   myLogo,
   booster,
   marvel,
@@ -61,4 +61,8 @@ export {
   timely,
   makers,
   pulse,
+  dotnet,
+  csharp,
+  postgre,
+  microsoftsql,
 };
