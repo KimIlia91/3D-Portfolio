@@ -36,18 +36,16 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.heroHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Про меня</p>
+        <h2 className={styles.heroHeadText}>Меня зовут Илья.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        В данный момент увлечен веб-разработкой. Не ограничиваюсь только фронтендом - я стремлюсь стать full-stack разработчиком, охватывая как внешние, так и внутренние аспекты приложений. Я мечтаю создавать высоконагруженные системы со сложной архитектурой, охватывая не только бекенд, но и нагруженные пользовательские интерфейсы. С опытом в C# и JS я надеюсь наращивать свои навыки и переносить их в реальные проекты. Уверен, что в будущем принесет много возможностей для творчества, роста и денежного благополучия!
+
+        В настоящее время я активно ищу возможности для практики, где смогу проверить свои знания и приобрести новый практический опыт. Готов внести свой вклад и учиться на практике, чтобы стать еще более квалифицированным разработчиком.
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

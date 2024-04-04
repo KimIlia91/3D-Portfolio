@@ -19,24 +19,26 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
     jobit,
     tripguide,
     threejs,
+    booster,
+    marvel,
+    food,
 } from "../assets";
   
 export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "Про меня",
     },
     {
       id: "work",
-      title: "Work",
+      title: "Мои работы",
     },
     {
       id: "contact",
-      title: "Contact",
+      title: "Контакты",
     },
 ];
   
@@ -198,7 +200,7 @@ const testimonials = [
   
 const projects = [
     {
-      name: "Car Rent",
+      name: "Booster IT School",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -207,7 +209,7 @@ const projects = [
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "next.js",
           color: "green-text-gradient",
         },
         {
@@ -215,11 +217,12 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: booster,
       source_code_link: "https://github.com/",
+      site_link: 'https://booster-school.vercel.app/',
     },
     {
-      name: "Job IT",
+      name: "Marvel Fan Site",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -236,20 +239,21 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: marvel,
+      source_code_link: "https://github.com/KimIlia91/marvel",
+      site_link: 'https://marvel-comics-db.netlify.app/',
     },
     {
-      name: "Trip Guide",
+      name: "Food Delivery",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "html",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +261,9 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: food,
+      source_code_link: "https://github.com/KimIlia91/food",
+      site_link: 'https://food-ilia-kim.netlify.app/',
     },
 ];
   

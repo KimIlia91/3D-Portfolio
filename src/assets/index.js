@@ -26,7 +26,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import food from './food.png';
+import marvel from './marvel.png';
+import booster from './booster.png';
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import myLogo from './myLogo.png';
@@ -57,8 +59,10 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
   jobit,
   tripguide,
   myLogo,
+  booster,
+  marvel,
+  food,
 };

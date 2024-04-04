@@ -12,7 +12,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link
+  source_code_link,
+  site_link,
 }) => (
   <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
     <Tilt
@@ -39,7 +40,9 @@ const ProjectCard = ({
         </div>
       </div>
       <div className='mt-5'>
-        <h3 className='text-white font-bold text-2xl'>{name}</h3>
+        <a href={site_link}>
+          <h3 className='text-white font-bold text-2xl hover:underline'>{name}</h3>
+        </a>
         <p className='mt-2 text-secondary text-sm'>{description}</p>
       </div>
       <div className='mt-4 flex flex-wrap gap-2'>
@@ -57,8 +60,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My works</p>
-        <h2 className={styles.heroHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>Мои работы</p>
+        <h2 className={styles.heroHeadText}>Проекты.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -66,11 +69,11 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Следующие проекты демонстрируют мои навыки и опыт посредством
+          примеров моих работ. Каждый проект кратко описан с
+          ссылки на репозитории кода и живые демонстрации. Это отражает мой
+          умение решать сложные задачи, работать с разными технологиями,
+          и эффективно управлять проектами.
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
