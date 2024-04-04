@@ -63,7 +63,7 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all={true} />
+      <Preload all />
     </Canvas>
   )
 }
