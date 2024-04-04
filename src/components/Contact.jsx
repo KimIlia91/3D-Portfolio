@@ -12,10 +12,6 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-const SERVICE_ID = process.env.VITE_SERVICE_ID;
-const TEMPLATE_ID = process.env.VITE_TEMPLATE_ID;
-const PUBLIC_KEY = process.env.VITE_PUBLIC_KEY;
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -34,8 +30,8 @@ const Contact = () => {
     event.preventDefault();
     setLoading(true);
     emailjs.send(
-      SERVICE_ID,
-      TEMPLATE_ID,
+      'service_fqbuv15',
+      'template_ud2k9zh',
       {
         from_name: form.name,
         to_name: 'Ilia',
@@ -43,7 +39,7 @@ const Contact = () => {
         to_email: 'paterfamelias@gmail.com',
         message: form.message,
       },
-      PUBLIC_KEY,
+      'jWvezOGdvbtSot2eq',
     ).then(() => {
       setLoading(false);
       alert(`Спасибо ${form.name}. Ваше сообщение успешно отправлено! Я свяжусь с Вами в ближайшее время`);
