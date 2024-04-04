@@ -14,7 +14,7 @@ import { slideIn } from '../utils/motion';
 
 const SERVICE_ID = process.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = process.env.VITE_TEMPLATE_ID;
-const API_KEY = process.env.VITE_API_KEY;
+const PUBLIC_KEY = process.env.VITE_PUBLIC_KEY;
 
 const Contact = () => {
   const formRef = useRef();
@@ -43,7 +43,7 @@ const Contact = () => {
         to_email: 'paterfamelias@gmail.com',
         message: form.message,
       },
-      API_KEY,
+      PUBLIC_KEY,
     ).then(() => {
       setLoading(false);
       alert(`Спасибо ${form.name}. Ваше сообщение успешно отправлено! Я свяжусь с Вами в ближайшее время`);
