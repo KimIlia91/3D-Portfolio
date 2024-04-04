@@ -12,9 +12,9 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-const API_KEY = import.meta.env.VITE_API_KEY;
+const SERVICE_ID = process.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = process.env.VITE_TEMPLATE_ID;
+const API_KEY = process.env.VITE_API_KEY;
 
 const Contact = () => {
   const formRef = useRef();
