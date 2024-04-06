@@ -131,7 +131,7 @@ const experiences = [
       title: ".Net Developer",
       company_name: "Timely Soft",
       icon: timely,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E5",
       date: "Май 2023 - Октябрь 2023",
       points: [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
