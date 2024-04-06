@@ -35,7 +35,7 @@ const ServiceCard = ({
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={fadeIn('', '', 0.1, 1)}>
         <p className={styles.sectionSubText}>Про меня</p>
         <h2 className={styles.heroHeadText}>Меня зовут <span className='text-[#915eff]'>Илья</span></h2>
       </motion.div>
