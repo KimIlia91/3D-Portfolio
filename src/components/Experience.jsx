@@ -44,7 +44,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant(0)}>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Опыт</p>
         <h2 className={styles.heroHeadText}>Чем я буду полезен</h2>
       </motion.div>
