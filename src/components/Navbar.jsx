@@ -70,7 +70,12 @@ const Navbar = () => {
             key="cv-link"
             className='text-[16px] font-medium cursor-pointer'
           >
-            <a href='/public/CV-ilia-kim-junior-frontend.pdf' download className='h-8 w-8'>
+            <a
+              href='/public/CV-ilia-kim-junior-frontend.pdf'
+              alt="cv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='h-8 w-8'>
               CV
             </a>
           </li>
@@ -107,7 +112,9 @@ const Navbar = () => {
               </a>
               <a
                 href='/public/CV-ilia-kim-junior-frontend.pdf'
-                download
+                alt="cv"
+                target="_blank"
+                rel="noopener noreferrer"
                 className='h-8 w-8 font-medium cursor-pointer text-2xl'
               >
                 CV
