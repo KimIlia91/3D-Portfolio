@@ -80,7 +80,6 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        
       </div>
       <div className='sm:hidden flex justify-center items-center'>
         <img
