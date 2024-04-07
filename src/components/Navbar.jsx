@@ -58,12 +58,18 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <li className='text-[16px] font-medium cursor-pointer'>
+          <li
+            key='github-link'
+            className='text-[16px] font-medium cursor-pointer'
+          >
             <a href="https://github.com/KimIlia91" className='h-8 w-8'>
               <BsGithub className='w-full h-full object-contain' />
             </a>
           </li>
-          <li className='text-[16px] font-medium cursor-pointer'>
+          <li
+            key="cv-link"
+            className='text-[16px] font-medium cursor-pointer'
+          >
             <a href='/public/CV-ilia-kim-junior-frontend.pdf' download className='h-8 w-8'>
               CV
             </a>
@@ -72,44 +78,43 @@ const Navbar = () => {
         
       </div>
       <div className='sm:hidden flex justify-center items-center'>
-            <img
-              src={toggle ? close : menu}
-              alt="menu"
-              className='w-[28px] h-[28px] object-contain cursor-pointer'
-              onClick={() => setToggle(!toggle)}
-            />
-            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-              <ul className='list-none flex justify-end items-start flex-col gap-4'>
-                {navLinks.map((link) => (
-                  <li
-                    key={link.id}
-                    className={`${active === link.title ? 'text-white' : 'text-secondary'} font-poppins font-medium cursor-pointer text-base`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(link.title);
-                    }}
-                  >
-                    <a href={`#${link.id}`}>{link.title}</a>
-                  </li>
-                ))}
-                <li
-                  key={navLinks.length}
-                  className='font-poppins flex gap-4 justify-between items-center'
-                >
-                  <a href="https://github.com/KimIlia91" className='h-8 w-8'>
-                    <BsGithub className='w-full h-full object-contain' />
-                  </a>
-                  <a
-                    href='/public/CV-ilia-kim-junior-frontend.pdf'
-                    download
-                    className='h-8 w-8 font-medium cursor-pointer text-2xl'
-                  >
-                    CV
-                  </a>
-                </li>
-              </ul>
-              
-            </div>
+        <img
+          src={toggle ? close : menu}
+          alt="menu"
+          className='w-[28px] h-[28px] object-contain cursor-pointer'
+          onClick={() => setToggle(!toggle)}
+        />
+        <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <ul className='list-none flex justify-end items-start flex-col gap-4'>
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`${active === link.title ? 'text-white' : 'text-secondary'} font-poppins font-medium cursor-pointer text-base`}
+                onClick={() => {
+                  setToggle(!toggle);
+                  setActive(link.title);
+                }}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+            <li
+              key={navLinks.length}
+              className='font-poppins flex gap-4 justify-between items-center'
+            >
+              <a href="https://github.com/KimIlia91" className='h-8 w-8'>
+                <BsGithub className='w-full h-full object-contain' />
+              </a>
+              <a
+                href='/public/CV-ilia-kim-junior-frontend.pdf'
+                download
+                className='h-8 w-8 font-medium cursor-pointer text-2xl'
+              >
+                CV
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   )
