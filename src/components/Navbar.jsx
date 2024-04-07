@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { BsGithub } from "react-icons/bs";
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { menu, close, myLogo } from '../assets';
@@ -40,24 +41,28 @@ const Navbar = () => {
               alt='logo'
               className='w-9 h-9 object-contain'
             />
-            <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            <p className='text-white text-[16px] font-bold cursor-pointer flex'>
               Портфолио&nbsp;
-              <span className='sm:block hidden'>
+              <span className='md:block hidden'>
                 | Илья Ким
               </span>
             </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row items-center gap-8'>
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title ? 'text-white' : 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === link.title ? 'text-white' : 'text-secondary'} hover:text-white text-[16px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <a href="https://github.com/KimIlia91" className='h-8 w-8'>
+            <BsGithub className='w-full h-full object-contain' />
+          </a>
         </ul>
+        
       </div>
       <div className='sm:hidden flex justify-center items-center'>
             <img
@@ -81,6 +86,9 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              <a href="https://github.com/KimIlia91" className='h-8 w-8'>
+                  <BsGithub className='w-full h-full object-contain' />
+              </a>
             </div>
       </div>
     </nav>

@@ -118,28 +118,33 @@ const technologies = [
 const experiences = [
     {
       title: ".Net Developer",
-      company_name: "Хакатон Makers",
+      company_name: "Участие в хакатоне (Makers Juniors dev)",
       icon: makers,
       iconBg: "#383E56",
       date: "Март 2023 - Апрель 2023",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Проект «Онлайн-кинотеатра» — веб-приложение, разработка серверной части на платформе ASP.NET Core WebAPI",
+        "Серверная часть: ASP.NET Core Web API, Entity Framework Core для работы с базой данных",
+        "Применяли принципы N-Layer для улучшения модульности, управляемости и масштабируемости приложения",
+        "MS SQL для хранения данных",
+        "Библиотека упарвления аутентификацией и авторизацией ASP.NET Core Identity",
+        "Библиотека ASP.NET Core Identity, модель управления правами на основе ролей (RBAC)",
+        "Использовали Azure Blob Storage (Учебная подписка) для хранения видео файлов, обеспечивая эффективное и масштабируемое хранение медиаконтента",
       ],
     },
     {
-      title: ".Net Developer",
+      title: "Стажёр .NET Developer",
       company_name: "Timely Soft",
       icon: timely,
       iconBg: "#383E5",
       date: "Май 2023 - Октябрь 2023",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Разработка серверной части CRM системы для удобной сдачи квартальных отчётов резидентов Парка Высоких технологий.",
+        "В проекте успешно использовали библиотеку MediatR в сочетании с паттерном CQRS (Command Query Responsibility Segregation) и применяли принципы Clean Architecture для улучшения модульности, управляемости и масштабируемости приложения",
+        "Работа с базами данных PostgreSQL",
+        "Взаимодействие с базой данных с помощью Entity Framework Core",
+        "Работа в команде из 9 человек, использующих методологии Scrum и Kanban в Azure DevOp",
+        "Библиотека ASP.NET Core Identity, модель управления правами на основе ролей (RBAC)",
       ],
     },
     {
@@ -149,10 +154,11 @@ const experiences = [
       iconBg: "#383E56",
       date: "Январь 2022 - настоящее время",
       points: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad. Cumque eos soluta, dolore id itaque amet ex modi ullam recusandae velit?",
+        "Веб-приложение для школы IT, разработанное с использованием Next.js. Моя обязанность включала разработку веб-версии приложения включала верстку веб-страниц согласно макету дизайнера и реализацию UI/UX элементов для создания интерактивного и понятного пользовательского интерфейса.",
+        "Разработка Frontend части приложения с применением стека технологий: Next.js, React, TypeScript, Tailwind CSS, RTK Query, Formik",
+        "Внедрение адаптивного дизайна, обеспечивающего корректное отображение сайта на различных устройствах и экранах",
+        "Улучшение производительности и оптимизация загрузки страниц и сокращению времени загрузки и улучшению пользовательского опыта",
+        "Работа в команде из 6 человек, использующих методологии Scrum и Kanban в Asana",
       ],
     },
 ];
@@ -188,7 +194,7 @@ const projects = [
     {
       name: "Booster IT School",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
+        "Веб-платформа, которая позволяет пользователям искать, записываться и ознакамливаться с разлиными курсами IT школы BOOSTER, предоставляя удобное и эффективное решение для поиска и ознакомления с курсами IT школы, а также с информацией о жизни школы и ее новостями.",
       tags: [
         {
           name: "react",
@@ -211,7 +217,7 @@ const projects = [
     {
       name: "Marvel Fan Site",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
+        "Пет-проект Marvel Fan Site - это фан-база комиксов MARVEL с подробным описанием героев и комиксов. Можно воспользоваться удобным поиском героя MARVEL с его полным описанием. На сайте можно ознакомиться с ценами на комиксы и найти необходимые издания для пополнения своей коллекции.",
       tags: [
         {
           name: "react",
@@ -234,7 +240,7 @@ const projects = [
     {
       name: "Food Delivery",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque excepturi rem dolorem explicabo obcaecati ducimus ipsum necessitatibus ad.",
+        "Пет-проект сайта, посвященного правильному питанию. На сайте можно сделать заказ еды, выбрав из разнообразных и полезных блюд. Уникальным инструментом сайта является калькулятор калорийности, который позволяет подобрать подходящие блюда в зависимости от массы тела и калорийных потребностей.",
       tags: [
         {
           name: "js",

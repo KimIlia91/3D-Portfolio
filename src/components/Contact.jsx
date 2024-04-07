@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import {
   BsTelegram,
   BsInstagram,
-  BsFacebook,
   BsWhatsapp
 } from "react-icons/bs";
 import { styles } from '../styles';
@@ -123,9 +122,6 @@ const Contact = () => {
             </a>
             <a href="https://t.me/KoRZh12" className='h-10 w-10'>
               <BsTelegram className='w-full h-full object-contain' />
-            </a>
-            <a href="https://www.facebook.com/share/ordjmU4WdBKh42o2/?mibextid=qi2Omg" className='h-10 w-10'>
-              <BsFacebook className='w-full h-full object-contain' />
             </a>
             <a href="https://www.instagram.com/kor1k91/?utm_source=qr&amp;igsh=MXNieTRodmRhOGk0cQ%3D%3D" className='h-10 w-10'>
               <BsInstagram className='w-full h-full object-contain' />
