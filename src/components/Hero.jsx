@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeIn('up', 'spring', 1, 1.5)}>
-            <img src={promo} alt="promo" className='w-[420px] h-[420px] object-contain' />
+            <img src={promo}  alt="promo" className='w-[420px] h-[420px] object-contain' />
           </motion.div>
         </div>
       </div>
