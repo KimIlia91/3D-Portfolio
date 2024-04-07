@@ -9,8 +9,10 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer,
 } from './components';
 import { Spinner } from './components';
+import { styles } from './styles';
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       </Suspense>
     </BrowserRouter>

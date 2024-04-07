@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Spinner from './Spinner';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -20,5 +21,6 @@ export {
   Contact,
   Spinner,
   EarthCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Footer,
 }
