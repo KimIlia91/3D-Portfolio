@@ -24,6 +24,7 @@ import {
     microsoftsql,
     github,
     gitlab,
+    nextjs,
 } from "../assets";
   
 export const navLinks = [
@@ -86,13 +87,17 @@ const technologies = [
       icon: redux,
     },
     {
+      name: "Next.js",
+      icon: nextjs,
+    },
+    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "git",
-      icon: git,
-    },
+    // {
+    //   name: "git",
+    //   icon: git,
+    // },
     {
       name: "docker",
       icon: docker,

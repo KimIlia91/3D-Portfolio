@@ -22,6 +22,7 @@ import dotnet from './tech/dotnet.png';
 import csharp from './tech/c-sharp.svg';
 import postgre from './tech/postgres.svg';
 import microsoftsql from './tech/microsoft-sql.svg';
+import nextjs from './tech/nextjs.png';
 
 import makers from './company/makers.png';
 import timely from './company/timely.png';
@@ -65,4 +66,5 @@ export {
   microsoftsql,
   promo,
   gitlab,
+  nextjs,
 };
