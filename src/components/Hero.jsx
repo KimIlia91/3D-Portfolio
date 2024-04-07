@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { promo } from '../assets';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
