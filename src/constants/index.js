@@ -22,6 +22,8 @@ import {
     csharp,
     postgre,
     microsoftsql,
+    github,
+    gitlab,
 } from "../assets";
   
 export const navLinks = [
@@ -202,7 +204,8 @@ const projects = [
         },
       ],
       image: booster,
-      source_code_link: "https://github.com/",
+      source_code_link_icon: gitlab,
+      source_code_link: "https://gitlab.com/diligen1/booste_front/-/tree/dev?ref_type=heads",
       site_link: 'https://booster-school.vercel.app/',
     },
     {
@@ -224,6 +227,7 @@ const projects = [
         },
       ],
       image: marvel,
+      source_code_link_icon: github,
       source_code_link: "https://github.com/KimIlia91/marvel",
       site_link: 'https://marvel-comics-db.netlify.app/',
     },
@@ -246,6 +250,7 @@ const projects = [
         },
       ],
       image: food,
+      source_code_link_icon: github,
       source_code_link: "https://github.com/KimIlia91/food",
       site_link: 'https://food-ilia-kim.netlify.app/',
     },

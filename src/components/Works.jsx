@@ -1,7 +1,6 @@
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -12,6 +11,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  source_code_link_icon,
   source_code_link,
   site_link,
 }) => (
@@ -32,9 +32,9 @@ const ProjectCard = ({
             className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
           >
             <img
-              src={github}
+              src={source_code_link_icon}
               alt='github'
-              className='w-1/2 h-1/2 object-contain'
+              className='w-6 h-6 object-contain'
             />
           </div>
         </div>
@@ -46,7 +46,7 @@ const ProjectCard = ({
         <p className='mt-2 text-secondary text-sm'>{description}</p>
       </div>
       <div className='mt-4 flex flex-wrap gap-2'>
-        {tags.map((tag, index) => (
+        {tags.map((tag) => (
           <p key={tag.name} className={`text-[14px] ${tag.color}`}>
             #{tag.name}
           </p>
