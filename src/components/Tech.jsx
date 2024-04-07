@@ -30,7 +30,11 @@ const Tech = () => {
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       <div className='flex flex-row gap-6 flex-wrap justify-center'>
         {technologies.map((technology, index) => (
-          <TechBall key={`tech-${index}`} index={index} icon={technology.icon} name={technology.name} />
+          <TechBall
+            key={`tech-${index}`}
+            index={index}
+            {...technology}
+          />
         ))}
       </div>
     </div>
