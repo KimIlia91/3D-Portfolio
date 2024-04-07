@@ -4,10 +4,10 @@ import { promo } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex items-center flex-wrap justify-center sm:gap-20'>
-          <div className='flex gap-10'>
+    <section className='relative w-full mx-auto'>
+      <div className={`${styles.paddingX} mx-auto flex flex-row justify-center flex-wrap items-start gap-5`}>
+        <div className='flex items-center mt-24 flex-wrap justify-center xl:gap-20'>
+          <div className='flex gap-4'>
             <div className='flex flex-col justify-center items-center mt-4'>
               <div className='w-5 h-5 rounded-full bg-[#915eff]' />
               <div className='w-1 sm:h-80 h-40 violet-gradient' />
@@ -18,11 +18,11 @@ const Hero = () => {
               </h1>
               <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-[520px]`}>
                 WEB-разработчик из города Бишкек <br />
-                Специализируюсь на разработке веб-приложений и сайтов
+                специализирующийся на разработке <br /> веб-приложений и сайтов
               </p>
             </div>
           </div>
-          <img src={promo} alt="promo" />
+          <img src={promo} alt="promo" className='w-[420px] h-[420px] object-contain' />
         </div>
       </div>
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
