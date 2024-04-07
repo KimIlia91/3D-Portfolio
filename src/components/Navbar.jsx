@@ -48,7 +48,7 @@ const Navbar = () => {
               </span>
             </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row items-center gap-8'>
+        <ul className='list-none hidden sm:flex flex-row items-center gap-6'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -58,9 +58,16 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <a href="https://github.com/KimIlia91" className='h-8 w-8'>
-            <BsGithub className='w-full h-full object-contain' />
-          </a>
+          <li className='text-[16px] font-medium cursor-pointer'>
+            <a href="https://github.com/KimIlia91" className='h-8 w-8'>
+              <BsGithub className='w-full h-full object-contain' />
+            </a>
+          </li>
+          <li className='text-[16px] font-medium cursor-pointer'>
+            <a href='/public/CV-ilia-kim-junior-frontend.pdf' download className='h-8 w-8'>
+              CV
+            </a>
+          </li>
         </ul>
         
       </div>
@@ -85,10 +92,23 @@ const Navbar = () => {
                     <a href={`#${link.id}`}>{link.title}</a>
                   </li>
                 ))}
+                <li
+                  key={navLinks.length}
+                  className='font-poppins flex gap-4 justify-between items-center'
+                >
+                  <a href="https://github.com/KimIlia91" className='h-8 w-8'>
+                    <BsGithub className='w-full h-full object-contain' />
+                  </a>
+                  <a
+                    href='/public/CV-ilia-kim-junior-frontend.pdf'
+                    download
+                    className='h-8 w-8 font-medium cursor-pointer text-2xl'
+                  >
+                    CV
+                  </a>
+                </li>
               </ul>
-              <a href="https://github.com/KimIlia91" className='h-8 w-8'>
-                  <BsGithub className='w-full h-full object-contain' />
-              </a>
+              
             </div>
       </div>
     </nav>
