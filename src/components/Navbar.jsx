@@ -103,7 +103,7 @@ const Navbar = () => {
               </li>
             ))}
             <li
-              key={navLinks.length}
+              key={`custom-link-${navLinks.length}`}
               className='font-poppins flex gap-4 justify-between items-center'
             >
               <a href="https://github.com/KimIlia91" className='h-8 w-8'>

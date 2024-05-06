@@ -100,23 +100,23 @@ const technologies = [
     //   icon: git,
     // },
     {
-      name: "docker",
+      name: "Docker",
       icon: docker,
     },
     {
-      name: 'dotnet',
+      name: '.Net',
       icon: dotnet,
     },
     {
-      name: 'csharp',
+      name: 'C#',
       icon: csharp,
     },
     {
-      name: 'postgre',
+      name: 'Postgre',
       icon: postgre,
     },
     {
-      name: 'microsoftsql',
+      name: 'Microsoft SQL',
       icon: microsoftsql,
     }
 ];

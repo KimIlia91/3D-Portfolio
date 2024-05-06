@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { promo } from '../assets';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
@@ -27,14 +27,17 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeIn('up', 'spring', 1, 1.5)}>
-            <img src={promo} alt="promo" className='w-[420px] h-[420px] object-contain' />
+            <img src={promo}  alt="promo" className='w-[420px] h-[420px] object-contain' />
           </motion.div>
         </div>
       </div>
-      <div className='absolute xs:bottom-0 bottom-14 w-full flex justify-center items-center'>
+      <motion.div
+        variants={fadeIn('', '', 1.5, 2)}
+        className='absolute xs:bottom-0 bottom-14 w-full flex justify-center items-center'
+      >
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div 
+            <motion.div
               animate={{
                 y: [0, 24, 0]
               }}
@@ -47,7 +50,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </motion.div>
     </>
   )
 }

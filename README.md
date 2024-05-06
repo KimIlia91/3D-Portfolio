@@ -1,8 +1,17 @@
-# React + Vite
+# Сайт портфолио на React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект представляет собой портфолио, разработанное на React с использованием Vite для сборки.
 
-Currently, two official plugins are available:
+## Используемые технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+В проекте используются следующие технологии:
+
+- **React** - для создания пользовательских интерфейсов.
+- **Vite** -  инструмент для быстрой сборки и запуска веб-приложений.
+- **Tailwind CSS** - CSS-фреймворк, с набором готовых CSS классов.
+- **Framer Motion** - библиотека для создания анимаций в React.
+- **Three.js** - библиотека для создания и отображения интерактивной 3D-графики в браузере.
+
+## Лицензия
+
+Этот проект лицензирован по лицензии MIT - подробности см. в файле [LICENSE](https://github.com/KimIlia91/3D-Portfolio/blob/main/LICENCE.txt).
