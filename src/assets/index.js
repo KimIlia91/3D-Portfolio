@@ -33,6 +33,7 @@ import marvel from './marvel.png';
 import booster from './booster.png';
 import pulse from './pulse.png';
 import myLogo from './myLogo.png';
+import irsen from './irsen.png';
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   promo,
   gitlab,
   nextjs,
+  irsen,
 };

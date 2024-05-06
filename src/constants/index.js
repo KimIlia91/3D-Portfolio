@@ -25,6 +25,7 @@ import {
     github,
     gitlab,
     nextjs,
+    irsen
 } from "../assets";
   
 export const navLinks = [
@@ -264,6 +265,29 @@ const projects = [
       source_code_link_icon: github,
       source_code_link: "https://github.com/KimIlia91/food",
       site_link: 'https://food-ilia-kim.netlify.app/',
+    },
+    {
+      name: "Irsen Media",
+      description:
+        "Landing page компании предоставляющей услуги наружной рекламы на Медиабордах. На сайте доступна интерактивная карта с локациями медиабордов, чтобы клиенты могли выбрать оптимальные локации для своей рекламны, также на сайте есть интерактивный Медиаборд чтобы клиент мог загрузить свой рекламный ролик для примерного обзора.",
+      tags: [
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "green-text-gradient",
+        },
+        {
+          name: "framermotion",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: irsen,
+      source_code_link_icon: github,
+      source_code_link: "https://github.com/KimIlia91/irsen",
+      site_link: 'https://irsen.vercel.app/',
     },
 ];
   
