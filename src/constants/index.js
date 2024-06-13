@@ -26,7 +26,6 @@ import {
     gitlab,
     nextjs,
     irsen
-    irsen
 } from "../assets";
   
 export const navLinks = [
