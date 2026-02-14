@@ -71,7 +71,7 @@ const Navbar = () => {
             className='text-[16px] font-medium cursor-pointer'
           >
             <a
-              href='/CV-ilia-kim-junior-frontend.pdf'
+              href='/CV-Kim-Ilia.pdf'
               alt="cv"
               target="_blank"
               rel="noopener noreferrer"
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <BsGithub className='w-full h-full object-contain' />
               </a>
               <a
-                href='/CV-ilia-kim-junior-frontend.pdf'
+                href='/CV-Kim-Ilia.pdf'
                 alt="cv"
                 target="_blank"
                 rel="noopener noreferrer"

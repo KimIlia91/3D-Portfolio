@@ -27,6 +27,8 @@ import nextjs from './tech/nextjs.png';
 import makers from './company/makers.png';
 import timely from './company/timely.png';
 import boosterLogo from './company/booster.png';
+import innovationDigital from './company/innovation-digital.png';
+import smartCity from './company/smart-city.png';
 
 import food from './food.png';
 import marvel from './marvel.png';
@@ -34,6 +36,7 @@ import booster from './booster.png';
 import pulse from './pulse.png';
 import myLogo from './myLogo.png';
 import irsen from './irsen.png';
+import foel from './foel.png';
 
 export {
   logo,
@@ -69,4 +72,7 @@ export {
   gitlab,
   nextjs,
   irsen,
+  innovationDigital,
+  smartCity,
+  foel,
 };

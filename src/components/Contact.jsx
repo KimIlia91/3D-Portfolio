@@ -22,15 +22,15 @@ const Contact = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setForm({...form, [name]: value})
+    setForm({ ...form, [name]: value })
   }
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setLoading(true);
     emailjs.send(
-      'service_fqbuv15',
-      'template_ud2k9zh',
+      'service_j9og6nn',
+      'template_yy6f26b',
       {
         from_name: form.name,
         to_name: 'Ilia',
@@ -42,7 +42,7 @@ const Contact = () => {
     ).then(() => {
       setLoading(false);
       alert(`Спасибо ${form.name}. Ваше сообщение успешно отправлено! Я свяжусь с Вами в ближайшее время`);
-      setForm({name: '', email: '', message: '',});
+      setForm({ name: '', email: '', message: '', });
     }, (error) => {
       setLoading(false);
       console.log(error);
@@ -63,7 +63,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
-          <label 
+          <label
             className='flex flex-col'
           >
             <span className=' font-medium text-white mb-4'>Имя</span>
@@ -77,7 +77,7 @@ const Contact = () => {
               className=' bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <label 
+          <label
             className='flex flex-col'
           >
             <span className=' font-medium text-white mb-4'>Email</span>
@@ -91,7 +91,7 @@ const Contact = () => {
               className=' bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <label 
+          <label
             className='flex flex-col'
           >
             <span className=' font-medium text-white mb-4'>Сообщение</span>
@@ -106,8 +106,8 @@ const Contact = () => {
             />
           </label>
           <button
-           type='submit'
-           className=' bg-tertiary py-3 px-9 outline-none w-fit font-bold text-white shadow-md shadow-primary rounded-xl'
+            type='submit'
+            className=' bg-tertiary py-3 px-9 outline-none w-fit font-bold text-white shadow-md shadow-primary rounded-xl'
           >
             {loading ? 'Отправка...' : 'Отправить'}
           </button>

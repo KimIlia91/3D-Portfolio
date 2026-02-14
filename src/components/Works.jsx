@@ -25,24 +25,35 @@ const ProjectCard = ({
       className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
     >
       <div className='relative w-full h-[230px]'>
-        <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
-        <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-          <div 
-            onClick={() => window.open(source_code_link, '_blank')}
-            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-          >
-            <img
-              src={source_code_link_icon}
-              alt='github'
-              className='w-6 h-6 object-contain'
-            />
-          </div>
+        <img src={image} alt={name} className='w-full h-full object-contain bg-gray-900 rounded-2xl' />
+        <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+          {site_link && (
+            <div
+              onClick={() => window.open(site_link, '_blank')}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              title='Посетить сайт'
+            >
+              <svg className='w-5 h-5 text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+              </svg>
+            </div>
+          )}
+          {source_code_link && (
+            <div
+              onClick={() => window.open(source_code_link, '_blank')}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={source_code_link_icon}
+                alt='git'
+                className='w-6 h-6 object-contain'
+              />
+            </div>
+          )}
         </div>
       </div>
       <div className='mt-5'>
-        <a href={site_link}>
-          <h3 className='text-white font-bold text-2xl hover:underline'>{name}</h3>
-        </a>
+        <h3 className='text-white font-bold text-2xl'>{name}</h3>
         <p className='mt-2 text-secondary text-sm'>{description}</p>
       </div>
       <div className='mt-4 flex flex-wrap gap-2'>
@@ -69,16 +80,12 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Следующие проекты демонстрируют мои навыки и опыт посредством
-          примеров моих работ. Каждый проект кратко описан с
-          ссылки на репозитории кода и живые демонстрации. Это отражает мой
-          умение решать сложные задачи, работать с разными технологиями,
-          и эффективно управлять проектами.
+          Представленные проекты в основном показывают мой опыт во фронтенд-разработке: вёрстке, работе со стилями и JavaScript. Примеры бэкенд-части и работы с API можно посмотреть в моих репозиториях на GitHub. Моё CV можно скачать в шапке сайта.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex justify-center flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`}index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
