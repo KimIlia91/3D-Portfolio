@@ -202,7 +202,7 @@ const experiences = [
       "PostgreSQL",
       "MinIO / S3-compatible storage для хранения медиафайлов",
       "Microservices architecture",
-      "Clean Architecture, DDD principles",
+      "Clean Architecture",
     ],
   },
 ];
