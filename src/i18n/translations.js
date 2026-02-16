@@ -106,7 +106,7 @@ export const translations = {
     projects: {
       subtitle: "My works",
       title: "Projects",
-      description: "The presented projects mainly show my experience in frontend development: layout, working with styles and JavaScript. Examples of backend and working with APIs can be viewed in my repositories on GitHub. My CV can be downloaded in the site header.",
+      description: "The presented projects mainly show my experience in frontend development: layout, working with styles and JavaScript. Examples of backend and working with APIs can be viewed in my repositories on GitHub and GitLab. My CV can be downloaded in the site header.",
       list: [
         {
           name: "Irsen Media",
@@ -262,7 +262,7 @@ export const translations = {
     projects: {
       subtitle: "Мои работы",
       title: "Проекты",
-      description: "Представленные проекты в основном показывают мой опыт во фронтенд-разработке: вёрстке, работе со стилями и JavaScript. Примеры бэкенд-части и работы с API можно посмотреть в моих репозиториях на GitHub. Моё CV можно скачать в шапке сайта.",
+      description: "Представленные проекты в основном показывают мой опыт во фронтенд-разработке: вёрстке, работе со стилями и JavaScript. Примеры бэкенд-части и работы с API можно посмотреть в моих репозиториях на GitHub и GitLab. Моё CV можно скачать в шапке сайта.",
       list: [
         {
           name: "Irsen Media",
