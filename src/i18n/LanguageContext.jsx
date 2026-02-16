@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import { translations } from './translations';
 
 export const LanguageContext = createContext();
 
@@ -10,8 +11,8 @@ export const LanguageProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('language', language);
-    
     document.documentElement.lang = language;
+    document.title = translations[language].meta.title;
   }, [language]);
 
   const toggleLanguage = () => {

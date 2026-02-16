@@ -1,5 +1,9 @@
 export const translations = {
   en: {
+    meta: {
+      title: "Portfolio | Ilya Kim",
+      description: "WEB-developer from Bishkek specializing in web application and website development"
+    },
     navbar: {
       title: "Portfolio",
       name: "Ilia Kim",
@@ -152,6 +156,10 @@ export const translations = {
     }
   },
   ru: {
+    meta: {
+      title: "Портфолио | Илья Ким",
+      description: "WEB-разработчик из города Бишкек специализирующийся на разработке веб-приложений и сайтов"
+    },
     navbar: {
       title: "Портфолио",
       name: "Илья Ким",
