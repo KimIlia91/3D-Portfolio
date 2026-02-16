@@ -74,7 +74,12 @@ const Works = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <p className={styles.sectionSubText}>{t('projects.subtitle')}</p>
         <h2 className={styles.heroHeadText}>{t('projects.title')}</h2>
       </motion.div>

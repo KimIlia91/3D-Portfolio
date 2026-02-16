@@ -40,7 +40,12 @@ const Feedbacks = () => {
   return (
     <div className='mt-12 bg-black-100 rounded-3xl'>
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
-        <motion.div variants={textVariant()}>
+        <motion.div 
+          variants={textVariant()}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.8 }}
+        >
           <p className={styles.heroSubText}>What others say</p>
           <h2 className={styles.heroHeadText}>Testimonials.</h2>
         </motion.div>
