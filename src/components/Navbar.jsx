@@ -14,6 +14,10 @@ const Navbar = () => {
   const { t } = useTranslation();
   const navLinks = getNavLinks(language);
 
+  const getCvLink = () => {
+    return language === 'ru' ? '/CV_Kim_Ilia_ru.pdf' : '/CV_Kim_Ilia_en.pdf';
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -86,9 +90,9 @@ const Navbar = () => {
             className='text-[16px] font-medium cursor-pointer'
           >
             <a
-              href='/CV-Kim-Ilia.pdf'
+              href={getCvLink()}
+              download
               alt="cv"
-              target="_blank"
               rel="noopener noreferrer"
               className='h-8 w-8'>
               CV
@@ -139,9 +143,9 @@ const Navbar = () => {
                 <BsGithub className='w-full h-full object-contain' />
               </a>
               <a
-                href='/CV-Kim-Ilia.pdf'
+                href={getCvLink()}
+                download
                 alt="cv"
-                target="_blank"
                 rel="noopener noreferrer"
                 className='h-8 w-8 font-medium cursor-pointer text-2xl'
               >
