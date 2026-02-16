@@ -2,8 +2,9 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+import { getProjects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { useTranslation } from '../i18n';
 
 const ProjectCard = ({
   index,
@@ -68,11 +69,14 @@ const ProjectCard = ({
 )
 
 const Works = () => {
+  const { t, language } = useTranslation();
+  const projects = getProjects(language);
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Мои работы</p>
-        <h2 className={styles.heroHeadText}>Проекты</h2>
+        <p className={styles.sectionSubText}>{t('projects.subtitle')}</p>
+        <h2 className={styles.heroHeadText}>{t('projects.title')}</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -80,7 +84,7 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Представленные проекты в основном показывают мой опыт во фронтенд-разработке: вёрстке, работе со стилями и JavaScript. Примеры бэкенд-части и работы с API можно посмотреть в моих репозиториях на GitHub. Моё CV можно скачать в шапке сайта.
+          {t('projects.description')}
         </motion.p>
       </div>
       <div className='mt-20 flex justify-center flex-wrap gap-7'>

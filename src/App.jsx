@@ -13,28 +13,31 @@ import {
 } from './components';
 import { Spinner } from './components';
 import { styles } from './styles';
+import { LanguageProvider } from './i18n';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<Spinner />}>
-        <div className='relative z-0 bg-primary'>
-          <div className='bg-hero-pattern md:py-20 bg-cover bg-no-repeat bg-center'>
-            <Navbar />
-            <Hero />
+    <LanguageProvider>
+      <BrowserRouter>
+        <Suspense fallback={<Spinner />}>
+          <div className='relative z-0 bg-primary'>
+            <div className='bg-hero-pattern md:py-20 bg-cover bg-no-repeat bg-center'>
+              <Navbar />
+              <Hero />
+            </div>
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
+            <div className='relative z-0'>
+              <Contact />
+              <StarsCanvas />
+            </div>
+            <Footer />
           </div>
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-          <div className='relative z-0'>
-            <Contact />
-            <StarsCanvas />
-          </div>
-          <Footer />
-        </div>
-      </Suspense>
-    </BrowserRouter>
+        </Suspense>
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }
 

@@ -10,9 +10,11 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { useTranslation } from '../i18n';
 
 const Contact = () => {
   const formRef = useRef();
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -41,12 +43,12 @@ const Contact = () => {
       'jWvezOGdvbtSot2eq',
     ).then(() => {
       setLoading(false);
-      alert(`Спасибо ${form.name}. Ваше сообщение успешно отправлено! Я свяжусь с Вами в ближайшее время`);
+      alert(t('contact.successMessage').replace('{name}', form.name));
       setForm({ name: '', email: '', message: '', });
     }, (error) => {
       setLoading(false);
       console.log(error);
-      alert('Произошла ошибка во время отправки сообщения. Попробуйте ещё раз позже.');
+      alert(t('contact.errorMessage'));
     })
   }
 
@@ -56,8 +58,8 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Свяжитесь со мной</p>
-        <h3 className={styles.sectionHeadText}>Контакты</h3>
+        <p className={styles.sectionSubText}>{t('contact.subtitle')}</p>
+        <h3 className={styles.sectionHeadText}>{t('contact.title')}</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -66,42 +68,42 @@ const Contact = () => {
           <label
             className='flex flex-col'
           >
-            <span className=' font-medium text-white mb-4'>Имя</span>
+            <span className=' font-medium text-white mb-4'>{t('contact.form.name')}</span>
             <input
               type="text"
               name='name'
               value={form.name}
               onChange={handleChange}
               required
-              placeholder="Ваше имя?"
+              placeholder={t('contact.form.namePlaceholder')}
               className=' bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label
             className='flex flex-col'
           >
-            <span className=' font-medium text-white mb-4'>Email</span>
+            <span className=' font-medium text-white mb-4'>{t('contact.form.email')}</span>
             <input
               type="email"
               name='email'
               value={form.email}
               onChange={handleChange}
               required
-              placeholder="Ваша электронная почта?"
+              placeholder={t('contact.form.emailPlaceholder')}
               className=' bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label
             className='flex flex-col'
           >
-            <span className=' font-medium text-white mb-4'>Сообщение</span>
+            <span className=' font-medium text-white mb-4'>{t('contact.form.message')}</span>
             <textarea
               rows='7'
               name='message'
               value={form.message}
               onChange={handleChange}
               required
-              placeholder="Что вы хотите узнать?"
+              placeholder={t('contact.form.messagePlaceholder')}
               className=' bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -109,12 +111,12 @@ const Contact = () => {
             type='submit'
             className=' bg-tertiary py-3 px-9 outline-none w-fit font-bold text-white shadow-md shadow-primary rounded-xl'
           >
-            {loading ? 'Отправка...' : 'Отправить'}
+            {loading ? t('contact.form.sending') : t('contact.form.send')}
           </button>
         </form>
         <div className='mt-12'>
           <h3 className='font-medium text-white text-xl'>
-            Свяжитесь удобным для вас способом:
+            {t('contact.alternativeTitle')}
           </h3>
           <div className='flex flex-wrap gap-4 mt-6'>
             <a href="https://wa.me/996709249884" className='h-10 w-10'>

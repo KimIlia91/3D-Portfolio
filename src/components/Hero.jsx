@@ -3,8 +3,11 @@ import { styles } from '../styles';
 import { promo } from '../assets';
 import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { useTranslation } from '../i18n';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={`${styles.paddingX} mx-auto flex flex-row justify-center flex-wrap items-start gap-5`}>
@@ -17,17 +20,18 @@ const Hero = () => {
               </div>
               <div>
                 <h1 className={`${styles.heroHeadText}`}>
-                  <span className='text-[#915eff]'>Илья Ким</span>
+                  <span className='text-[#915eff]'>{t('hero.name')}</span>
                 </h1>
                 <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-[520px]`}>
-                  WEB-разработчик из города Бишкек <br />
-                  специализирующийся на разработке <br /> веб-приложений и сайтов
+                  {t('hero.description')} <br />
+                  {t('hero.description2')} <br />
+                  {t('hero.description3')}
                 </p>
               </div>
             </div>
           </motion.div>
           <motion.div variants={fadeIn('up', 'spring', 1, 1.5)}>
-            <img src={promo}  alt="promo" className='w-[420px] h-[420px] object-contain' />
+            <img src={promo} alt="promo" className='w-[420px] h-[420px] object-contain' />
           </motion.div>
         </div>
       </div>

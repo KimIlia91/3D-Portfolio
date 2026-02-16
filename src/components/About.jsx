@@ -1,9 +1,10 @@
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { services } from '../constants';
+import { getServices } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { useTranslation } from '../i18n';
 
 const ServiceCard = ({
   index,
@@ -33,19 +34,22 @@ const ServiceCard = ({
 }
 
 const About = () => {
+  const { t, language } = useTranslation();
+  const services = getServices(language);
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Про меня</p>
-        <h2 className={styles.heroHeadText}>Меня зовут <span className='text-[#915eff]'>Илья</span></h2>
+        <p className={styles.sectionSubText}>{t('about.subtitle')}</p>
+        <h2 className={styles.heroHeadText}>{t('about.title')} <span className='text-[#915eff]'>{t('about.titleName')}</span></h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      > 
-        Я начинающий программист, с опытом в C# .NET и React NextJS. В данный момент я заинтересован в веб-разработке, однако мои амбиции выходят далеко за рамки фронтенда. Моя цель — стать полноценным full-stack разработчиком, владея как внешними, так и внутренними аспектами разработки приложений. Меня мотивирует создание высоконагруженных систем со сложной архитектурой, охватывая как бекенд, так и пользовательский интерфейс. С опытом работы в C# и JS я стремлюсь к постоянному росту навыков и их применению на практике. Я уверен, что в будущем это откроет мне множество возможностей для развития, творчества и финансового благополучия! 
+      >
+        {t('about.paragraph1')}
         <br /> <br />
-        В настоящее время я активно ищу возможности для практики, где смогу утвердить свои знания и получить новый опыт. Готов внести свой вклад и обучаться на практике, чтобы стать еще более квалифицированным разработчиком.
+        {t('about.paragraph2')}
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

@@ -1,14 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BsGithub } from "react-icons/bs";
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+import { getNavLinks } from '../constants';
 import { menu, close, myLogo } from '../assets';
+import { LanguageContext, useTranslation } from '../i18n';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { t } = useTranslation();
+  const navLinks = getNavLinks(language);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +28,7 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -36,17 +40,17 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-            <img
-              src={myLogo}
-              alt='logo'
-              className='w-9 h-9 object-contain'
-            />
-            <p className='text-white text-[16px] font-bold cursor-pointer flex'>
-              Портфолио&nbsp;
-              <span className='md:block hidden'>
-                | Илья Ким
-              </span>
-            </p>
+          <img
+            src={myLogo}
+            alt='logo'
+            className='w-9 h-9 object-contain'
+          />
+          <p className='text-white text-[16px] font-bold cursor-pointer flex'>
+            {t('navbar.title')}&nbsp;
+            <span className='md:block hidden'>
+              | {t('navbar.name')}
+            </span>
+          </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row items-center gap-6'>
           {navLinks.map((link) => (
@@ -58,6 +62,17 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            key='language-switcher'
+            className='text-[16px] font-medium cursor-pointer'
+          >
+            <button
+              onClick={toggleLanguage}
+              className='px-3 py-1 rounded-md bg-tertiary hover:bg-secondary/20 transition-colors text-white font-bold'
+            >
+              {language === 'ru' ? 'EN' : 'RU'}
+            </button>
+          </li>
           <li
             key='github-link'
             className='text-[16px] font-medium cursor-pointer'
@@ -102,6 +117,20 @@ const Navbar = () => {
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
+            <li
+              key='language-switcher-mobile'
+              className='font-poppins w-full'
+            >
+              <button
+                onClick={() => {
+                  toggleLanguage();
+                  setToggle(false);
+                }}
+                className='w-full px-3 py-2 rounded-md bg-tertiary hover:bg-secondary/20 transition-colors text-white font-bold text-center'
+              >
+                {language === 'ru' ? 'EN' : 'RU'}
+              </button>
+            </li>
             <li
               key={`custom-link-${navLinks.length}`}
               className='font-poppins flex gap-4 justify-between items-center'
