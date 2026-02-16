@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     meta: {
-      title: "Portfolio | Ilya Kim",
+      title: "Portfolio | Ilia Kim",
       description: "WEB-developer from Bishkek specializing in web application and website development"
     },
     navbar: {
@@ -23,7 +23,7 @@ export const translations = {
     about: {
       subtitle: "About me",
       title: "My name is",
-      titleName: "Ilya",
+      titleName: "Ilia",
       paragraph1: "I am a beginner programmer with experience in C# .NET and React NextJS. Currently, I am interested in web development, but my ambitions go far beyond frontend. My goal is to become a full-fledged full-stack developer, mastering both external and internal aspects of application development. I am motivated by creating high-load systems with complex architecture, covering both backend and user interface. With experience in C# and JS, I strive for constant skill growth and their practical application. I am confident that in the future this will open up many opportunities for development, creativity and financial well-being!",
       paragraph2: "Currently, I am actively looking for opportunities to practice, where I can confirm my knowledge and gain new experience. Ready to contribute and learn in practice to become an even more qualified developer."
     },
