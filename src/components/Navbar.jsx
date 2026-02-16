@@ -15,7 +15,7 @@ const Navbar = () => {
   const navLinks = getNavLinks(language);
 
   const getCvLink = () => {
-    return language === 'ru' ? '/CV_Kim_Ilia_ru.pdf' : '/CV_Kim_Ilia_en.pdf';
+    return language === 'ru' ? '/CV_Ilia_Kim_ru.pdf' : '/CV_Ilia_Kim_en.pdf';
   };
 
   useEffect(() => {
