@@ -52,7 +52,7 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row items-center gap-6'>
+        <ul className='list-none hidden sm:flex flex-row items-center gap-4'>
           {navLinks.map((link) => (
             <li
               key={link.id}
