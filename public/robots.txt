@@ -1,0 +1,24 @@
+# robots.txt for Portfolio | Ilia Kim
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all bots to crawl all content
+User-agent: *
+Allow: /
+
+# Disallow private files
+Disallow: /CV_*.pdf
+Disallow: /*.json$
+
+# Special rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Special rules for Yandex (Russian search engine)
+User-agent: YandexBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://ilia-kim.vercel.app/sitemap.xml
+
+# Host directive
+Host: https://ilia-kim.vercel.app
